@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(32, 32, 32);
+    background: linear-gradient(to right, rgb(17, 17, 17), rgb(46, 46, 46));
 }
 
 #page-title {
