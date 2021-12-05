@@ -1,3 +1,8 @@
+:root {
+    --color: rgb(255, 0, 170);
+    --colorl: rgb(255, 126, 212);
+}
+
 body {
     background: linear-gradient(to right, rgb(17, 17, 17), rgb(46, 46, 46));
 }
@@ -8,27 +13,27 @@ body {
     width: 600px;
     padding: 20px;
     padding-bottom: 40px;
-    border: 2px solid rgb(209, 166, 255);
+    border: 2px solid var(--colorl);
     border-radius: 15px;
-    box-shadow: 0px 0px 10px 2px rgb(123, 0, 255);
+    box-shadow: 0px 0px 10px 2px var(--color);
     margin-top: 10%;
 }*/
 
 #page-title {
     margin-top: 20px;
-    color: rgb(209, 166, 255);
-    -webkit-text-stroke: 1px rgb(123, 0, 255);
-    text-shadow: 0px 0px 20px rgb(123, 0, 255);;
+    color: var(--colorl);
+    -webkit-text-stroke: 1px var(--color);
+    text-shadow: 0px 0px 20px var(--color);;
 }
 
 #leodaweeb-img {
     width: 200px;
     height: 200px;
     margin-top: 20px;
-    border: 2px solid rgb(209, 166, 255);
+    border: 2px solid var(--colorl);
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0px 0px 10px 2px rgb(123, 0, 255);
+    box-shadow: 0px 0px 10px 2px var(--color);
 }
 
 #little-label {
@@ -38,7 +43,7 @@ body {
 
 #timer {
     font-size: 2.5rem;
-    color: rgb(209, 166, 255);
-    -webkit-text-stroke: 1px rgb(123, 0, 255);
-    text-shadow: 0px 0px 20px rgb(123, 0, 255);
+    color: var(--colorl);
+    -webkit-text-stroke: 1px var(--color);
+    text-shadow: 0px 0px 20px var(--color);
 }
