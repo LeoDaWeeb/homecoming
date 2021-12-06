@@ -97,7 +97,7 @@ body {
     color: var(--color);
     -webkit-text-stroke: 0.2px var(--color);
     font-size: 1rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
     border-radius: 10px;
     font-weight: bold;
 }
