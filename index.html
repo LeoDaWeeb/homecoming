@@ -16,12 +16,40 @@
 <body>
     <div class="container" align="center">
         <div id="content">
-            <h1 id="page-title">LeoDaWeeb Homecoming</h1>
+            <h2 id="page-title">LeoDaWeeb Homecoming</h2>
             <img src="resources/icon2.jpg" id="leodaweeb-img">
             <h5 id="little-label">LeoDaWeeb will be home in:</h5>
-            <h1 id="timer">
-                ...
-            </h1>
+            <div class="row justify-content-center">
+                <div class="col- timer-circle" id="days-timer">
+
+                </div>
+                <div class="col- timer-circle" id="hours-timer">
+                    
+                </div>
+                <div class="col- timer-circle" id="mins-timer">
+                    
+                </div>
+                <div class="col- timer-circle" id="secs-timer">
+                    
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col- timer-label" id="days-timer-label">
+                    Days
+                </div>
+                <div class="col- timer-label" id="hours-timer-label">
+                    Hours
+                </div>
+                <div class="col- timer-label" id="mins-timer-label">
+                    Minutes
+                </div>
+                <div class="col- timer-label" id="secs-timer-label">
+                    Seconds
+                </div>
+            </div>
+            <div id="seconds-js-animation-wrapper">
+                <span id="seconds-js-animation"></span>
+            </div>
         </div>
     </div>
     <script>
@@ -35,7 +63,19 @@
             let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
             let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
 
-            document.getElementById('timer').textContent = `${days} Days ${hours}h ${minutes}min ${seconds}sec`
+            document.getElementById('days-timer').textContent = days
+            document.getElementById('hours-timer').textContent = hours
+            document.getElementById('mins-timer').textContent = minutes
+            document.getElementById('secs-timer').textContent = seconds
+
+            let secondsAsDots = ''
+
+            for (let i = 0; i < seconds; i++) {
+                secondsAsDots += '.'
+            }
+
+            document.getElementById('seconds-js-animation').textContent = secondsAsDots
+
         }, 1000)
 
     </script>
