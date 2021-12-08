@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +15,7 @@
 </head>
 
 <body>
-    <div class="container" align="center">
+    <div class="container" align="center" id="content">
         <div id="content">
             <h2 id="page-title">LeoDaWeeb Homecoming</h2>
             <img src="resources/icon2.jpg" id="leodaweeb-img">
@@ -24,13 +25,13 @@
 
                 </div>
                 <div class="col- timer-circle" id="hours-timer">
-                    
+
                 </div>
                 <div class="col- timer-circle" id="mins-timer">
-                    
+
                 </div>
                 <div class="col- timer-circle" id="secs-timer">
-                    
+
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -50,6 +51,9 @@
             <div id="seconds-js-animation-wrapper">
                 <span id="seconds-js-animation"></span>
             </div>
+        </div>
+        <div id="amazing">
+            <button id="btn" onclick="playMusic()">Press here and you won't be dissapointed</button>
         </div>
     </div>
     <script>
@@ -78,6 +82,32 @@
 
         }, 1000)
 
+        let music = new Audio('./resources/music.mp3')
+        function playMusic() {
+            if (!music.paused) {
+                return
+            }
+            music.volume = 1
+            music.play()
+            document.getElementById('btn').style.animation = 'btntran 30s, music 530ms 170ms infinite'
+            document.getElementById('btn').textContent = ''
+            setTimeout(() => {
+                let musicLowerVolume = setInterval(() => {
+                    music.volume -= 0.05
+                }, 100);
+                setTimeout(() => {
+                    clearInterval(musicLowerVolume)
+                }, 2000)
+            }, 26750)
+            setTimeout(() => {
+                music.pause()
+                music.currentTime = 0
+                document.getElementById('btn').style.animation = 'none'
+                document.getElementById('btn').textContent = 'Press here and you won\'t be dissapointed'
+            }, 29850)
+        }
+
     </script>
 </body>
+
 </html>

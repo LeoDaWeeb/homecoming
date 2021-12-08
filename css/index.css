@@ -25,7 +25,7 @@ body {
     -webkit-text-stroke: 1px var(--color);
     text-shadow: 0px 0px 20px var(--color);;
 }
-
+/*
 @keyframes img-animation {
     0% {
         box-shadow: 0px 0px 20px 4px var(--color);
@@ -37,7 +37,7 @@ body {
         box-shadow: 0px 0px 20px 4px var(--color);
     }
 }
-
+*/
 #leodaweeb-img {
     width: 200px;
     height: 200px;
@@ -46,7 +46,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0px 0px 20px 4px var(--color);
-    animation: img-animation 1s infinite;
+    /*animation: img-animation 1s infinite;*/
     animation-delay: 1300ms;
 }
 
@@ -100,4 +100,87 @@ body {
     letter-spacing: 0.5px;
     border-radius: 10px;
     font-weight: bold;
+}
+
+@keyframes btntran {
+    0% {
+        background: url(../resources/travis.png) no-repeat;
+        background-position: -100px center;
+        background-size: 550px;
+    }
+    10% {
+        background: url(../resources/icon2.jpg) no-repeat;
+        background-position: -100px center;
+        background-size: 500px;
+    }
+    20% {
+        transition: 1000ms;
+        background: url(../resources/icon3.jpg) no-repeat;
+        background-position: -10px center;
+        background-size: 380px;
+    }
+    30% {
+        transition: 1000ms;
+        background: url(../resources/icon1.jpg) no-repeat;
+        background-position: -50px -200px;
+        background-size: 380px;
+    }
+    40% {
+        transition: 1000ms;
+        background: url(../resources/icon6.jpg) no-repeat;
+        background-position: center;
+        background-size: 380px;
+    }
+    50% {
+        transition: 1000ms;
+        background: url(../resources/icon5.jpg) no-repeat;
+        background-position: center;
+        background-size: 500px;
+    }
+    60% {
+        transition: 1000ms;
+        background: url(../resources/icon4.jpg) no-repeat;
+        background-position: center -10px;
+        background-size: 380px;
+    }
+    70% {
+        transition: 1000ms;
+        background: url(../resources/icon7.jpg) no-repeat;
+        background-position: -25px center;
+        background-size: 540px;
+    }
+    80% {
+        transition: 1000ms;
+        background: url(../resources/icon8.jpg) no-repeat;
+        background-position: -50px center;
+        background-size: 450px;
+    }
+}
+
+@keyframes music {
+    50% {
+        box-shadow: 0px 0px 30px 4px var(--color);
+    }
+    100% {
+        box-shadow: 0px 0px 10px 2px var(--color);
+    }
+}
+
+#btn {
+    width: 300px;
+    height: 300px;
+    font-size: 1.5rem;
+    color: var(--color);
+    -webkit-text-stroke: 1px black;
+    text-shadow: 0px 0px 10px var(--color);
+    background: url(../resources/travis.png) no-repeat;
+    background-position: -100px center;
+    background-size: 550px;
+    font-weight: bold;
+    outline: none;
+    border-radius: 100%;
+    border: 2px solid var(--color);
+    box-shadow: 0px 0px 10px 2px var(--color);
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
