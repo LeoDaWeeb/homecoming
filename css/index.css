@@ -9,7 +9,7 @@ body {
 
 body::after{
     position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
-    content:url(../resources/icon1.jpg) url(../resources/icon2.jpg) url(../resources/icon3.jpg) url(../resources/icon4.jpg) url(../resources/icon5.jpg) url(../resources/icon6.jpg) url(../resources/icon7.jpg) url(../resources/icon8.jpg) url(../resources/travis.png);
+    content: url(../resources/icon1.jpg) url(../resources/icon2.jpg) url(../resources/icon3.jpg) url(../resources/icon4.jpg) url(../resources/icon5.jpg) url(../resources/icon6.jpg) url(../resources/icon7.jpg) url(../resources/icon8.jpg) url(../resources/icon9.jpg) url(../resources/icon10.jpg) url(../resources/icon11.jpg) url(../resources/icon12.jpg) url(../resources/icon13.jpg) url(../resources/icon14.jpg) url(../resources/icon15.jpg) url(../resources/icon16.jpg) url(../resources/icon17.jpg) url(../resources/icon18.jpg) url(../resources/icon19.jpg) url(../resources/icon20.jpg) url(../resources/icon21.jpg) url(../resources/icon22.jpg) url(../resources/icon23.jpg) url(../resources/icon24.jpg) url(../resources/icon25.jpg) url(../resources/icon26.jpg) url(../resources/icon27.jpg) url(../resources/icon28.jpg)
 }
 
 /*
