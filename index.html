@@ -89,7 +89,7 @@
             }
             music.volume = 1
             music.play()
-            document.getElementById('btn').style.animation = 'btntran 30s, music 530ms 170ms infinite'
+            document.getElementById('btn').style.animation = 'btntran 33s, music 530ms 170ms infinite'
             document.getElementById('btn').textContent = ''
             setTimeout(() => {
                 let musicLowerVolume = setInterval(() => {
@@ -97,14 +97,14 @@
                 }, 100);
                 setTimeout(() => {
                     clearInterval(musicLowerVolume)
-                }, 2000)
-            }, 26750)
+                }, 2500)
+            }, 29980)
             setTimeout(() => {
                 music.pause()
                 music.currentTime = 0
                 document.getElementById('btn').style.animation = 'none'
                 document.getElementById('btn').textContent = 'Press here and you won\'t be dissapointed'
-            }, 29850)
+            }, 33050)
         }
 
     </script>

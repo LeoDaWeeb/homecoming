@@ -120,8 +120,8 @@ body::after{
     }
     20% {
         transition: 1000ms;
-        background: url(../resources/icon3.jpg) no-repeat;
-        background-position: -10px center;
+        background: url(../resources/icon4.jpg) no-repeat;
+        background-position: center -10px;
         background-size: 380px;
     }
     30% {
@@ -132,9 +132,10 @@ body::after{
     }
     40% {
         transition: 1000ms;
-        background: url(../resources/icon6.jpg) no-repeat;
-        background-position: center;
+        background: url(../resources/icon3.jpg) no-repeat;
+        background-position: -10px center;
         background-size: 380px;
+
     }
     50% {
         transition: 1000ms;
@@ -144,15 +145,15 @@ body::after{
     }
     60% {
         transition: 1000ms;
-        background: url(../resources/icon4.jpg) no-repeat;
-        background-position: center -10px;
-        background-size: 380px;
-    }
-    70% {
-        transition: 1000ms;
         background: url(../resources/icon7.jpg) no-repeat;
         background-position: -25px center;
         background-size: 540px;
+    }
+    70% {
+        transition: 1000ms;
+        background: url(../resources/icon6.jpg) no-repeat;
+        background-position: center;
+        background-size: 380px;
     }
     80% {
         transition: 1000ms;
