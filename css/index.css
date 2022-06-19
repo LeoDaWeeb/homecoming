@@ -172,13 +172,13 @@ body::after{
     }
     3.2% {
         transition: 250ms;
-        background: url(../resources2/icon1.jpg) no-repeat;
+        background: url(../resources/icon1.jpg) no-repeat;
         background-position: -100px center;
         background-size: 500px;
     }   
     6.4% {
         transition: 250ms;
-        background: url(../resources/icon2.jpg) no-repeat;
+        background: url(../resources2/icon2.jpg) no-repeat;
         background-position: -550px -30px;
         background-size: 1600px;
     }
